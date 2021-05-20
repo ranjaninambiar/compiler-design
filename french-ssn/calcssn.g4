@@ -1,0 +1,12 @@
+lexer grammar calcssn;
+S  : [1-2];
+Y: [0-9][0-9];
+M :[0][1-9]|[1][0-2];
+L: [0-9][0-9]|[0-9][A-Z];
+O :[0-9][0-9][0-9]|[0-9][0-9][A-Z];
+SP: ' ';
+C: [0-9][1-7];
+N :[0-9 a-z A-Z];
+SSN :(S)(Y)(M)(L)(O)(SP)(C){System.out.println("SSN is valid\n");};
+SSNNV : (N)(N)(N)(N)(N)(N)(N)(N)(N)(N)(SP)(N)(N){System.out.println("SSN is not valid\n");};
+WS:[\t\r\n]+ ->skip;
