@@ -1,4 +1,4 @@
-# COD
+# Codes written for Compiler Design Lab (Even Semester-20')
 ### HelloWorld - dfa design
 ### tabledrivenscanner - r(0-9)*
 ### tabledrivenscanner - (ab)|(ab)*c
